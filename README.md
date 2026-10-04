@@ -225,3 +225,4 @@ erDiagram
     }
 ```
 ※ production テーブルでは、fruit_id・prefecture_id・production_year の組み合わせに UNIQUE 制約を設定しています。
+
