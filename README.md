@@ -194,10 +194,11 @@ source C:/path/to/sql/queries/01_basic.sql
 
 2025年の一部データについては、公表時点の概数値を使用しています。
 
+```mermaid
 erDiagram
-    categories ||--o{ fruits : "has"
-    fruits ||--o{ production : "has"
-    prefectures ||--o{ production : "has"
+    categories ||--o{ fruits : ""
+    fruits ||--o{ production : ""
+    prefectures ||--o{ production : ""
 
     categories {
         INT id PK
@@ -222,5 +223,5 @@ erDiagram
         INT production_year
         INT production_volume
     }
-
+```
 ※ production テーブルでは、fruit_id・prefecture_id・production_year の組み合わせに UNIQUE 制約を設定しています。
